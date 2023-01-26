@@ -90,3 +90,9 @@ h2{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 900;
 }
+.comment{
+  color: rgb(255, 255, 0);
+  font-weight: 600;
+  font-size: larger;
+  font-family:Arial, Helvetica, sans-serif;
+}

@@ -1,60 +1,72 @@
-body{
-  margin:auto;
-  margin-top:20px;
-  background-image:url(https://media.istockphoto.com/photos/wooden-parqet-texture-picture-id906064552?k=20&m=906064552&s=612x612&w=0&h=9mJ3xZiM0UsVMp2EdYTb3j4Gq9gID_KxePz5iSF4n84=);
+body {
+  margin: auto;
+  margin-top: 20px;
+  background-image: url(https://media.istockphoto.com/photos/wooden-parqet-texture-picture-id906064552?k=20&m=906064552&s=612x612&w=0&h=9mJ3xZiM0UsVMp2EdYTb3j4Gq9gID_KxePz5iSF4n84=);
 }
+
 .board {
   margin: auto;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  margin-left:20px;
-  width:40%;
+  margin-left: 20px;
+  width: 40%;
 }
-.box{
+
+.box {
   box-sizing: border-box;
   width: 70px;
   height: 70px;
   border: 1px solid black;
-    
+
 }
-.box:nth-of-type(2n){
+
+.box:nth-of-type(2n) {
   background-color: black;
   border: none;
 }
-.box:nth-of-type(2n-1){
+
+.box:nth-of-type(2n-1) {
   background-color: white;
-}.box1{
+}
+
+.box1 {
   box-sizing: border-box;
   width: 70px;
   height: 70px;
   border: 1px solid black;
-    
+
 }
-.box1:nth-of-type(2n){
-  background-color:white;
+
+.box1:nth-of-type(2n) {
+  background-color: white;
 }
-.box1:nth-of-type(2n-1){
-  background-color:black ;
+
+.box1:nth-of-type(2n-1) {
+  background-color: black;
   border: none;
 }
-img{
+
+img {
   width: 56px;
   height: 67px;
   margin-left: 2px;
 }
-#pawn{
+
+#pawn {
   width: 30px;
   height: 67px;
   margin-left: 15px;
   padding-top: 12px;
 }
- aside{
+
+aside {
   width: 55%;
-    padding-left: .5rem;
-    margin-left:0px;
-    float: right;
-} 
-li{
+  padding-left: .5rem;
+  margin-left: 0px;
+  float: right;
+}
+
+li {
   font-size: 20px;
   width: 682px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -63,36 +75,78 @@ li{
   margin-top: 0%;
 }
 
-h1{
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin:10px;
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 10px;
   width: 5000px;
   font-size: 50px;
-  letter-spacing:2px;
+  letter-spacing: 2px;
   color: rgb(255, 255, 255);
-  text-decoration:whitesmoke underline;
+  text-decoration: whitesmoke underline;
 }
-#chessicon{
+
+#chessicon {
   width: 50px;
   height: 50px;
   border: 2px solid black;
   border-radius: 50%;
 }
-#realboard{
-  width:48%;
-  height:0%;
+
+#realboard {
+  width: 48%;
+  height: 0%;
   box-shadow: 2px rgb(104, 104, 104);
 }
-h2{
+
+h2 {
   display: inline-block;
   color: rgb(255, 255, 255);
-  text-shadow: 20px 20px  rgba(0, 0, 0, 0.479);
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 20px 20px rgba(0, 0, 0, 0.479);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 900;
 }
-.comment{
+
+.comment {
   color: rgb(255, 255, 0);
   font-weight: 600;
   font-size: larger;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.preview {
+  width: 465px;
+  background-color: rgb(255 255 255);
+  box-shadow: 3px 2px 10px 2px black;
+  border-radius: 5px;
+  display: block;
+  padding: 3px;
+}
+
+.preview p {
+width: 400px;
+text-align: justify;
+}
+
+.preview img {
+  width: 184px;
+  height: 285px;
+}
+
+.preview aside{
+  width: 40%;
+  margin-left: 5px;
+  float: right;
+}
+.board>div{
+  position: relative;
+}
+.board>div div{
+  position: absolute;
+  display:none;
+  z-index: 9999;
+  left: 30px;
+    top: 105%;
+}
+.board div:hover>.preview{
+  display: block;
 }
